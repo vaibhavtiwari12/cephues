@@ -76,14 +76,14 @@
   }
 
   .head-main {
-    font-size: 80px;
+    font-size: 5vw;
     margin-top: 70px;
     margin-left: 70px;
-    width: 800px;
+    width: 25vw;
   }
 
   .webdeveloper {
-    font-size: 23px;
+    font-size: 1.5vw;
     font-family: cool;
     margin-bottom: 13px;
     /*     margin-left: 180px; */
