@@ -63,9 +63,12 @@
   }
 
   .top-menu {
-    background: rgba(255, 255, 255, 0.8);
+    /* background: rgba(255, 255, 255); */
+    border-bottom: 1px solid #a9a9a9;
   }
-
+  .cephuesLogo {
+    margin-left: 10px;
+  }
   .menu-item-container {
     display: flex;
     justify-content: flex-end;
@@ -76,14 +79,15 @@
   }
 
   .head-main {
-    font-size: 5vw;
+    font-size: 4vw;
     margin-top: 70px;
     margin-left: 70px;
     width: 25vw;
+    color: #234a58;
   }
 
   .webdeveloper {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: cool;
     margin-bottom: 13px;
     /*     margin-left: 180px; */
@@ -92,6 +96,9 @@
     width: 800px;
     margin-top: 40px;
   }
+    .webdeveloper p{
+      color: #2d2d2d;
+    }
 
   .about {
     padding: 5px;
