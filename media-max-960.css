@@ -52,7 +52,7 @@
 
   .footer {
     height: 15%;
-    background: #141414;
+    background: #fcfcfc;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -67,6 +67,7 @@
     -ms-flex-align: center;
     -ms-grid-row-align: center;
     align-items: center;
+    border-top: 1px solid #c7c7c7;
   }
 
   .all-progressbar-container {
@@ -170,13 +171,16 @@
     background-color: #fcfcfc !important;
   }
 
+  .animation{
+    transition: all 400ms;
+  }
   .top-menu.show {
     height: 100%;
     padding-right: 0;
   }
 
   .title_logo img {
-    height: 80vw;
+        height: 14em;
   }
   .title_logo {
     text-align: center;
@@ -440,7 +444,7 @@
   }
 
   .webdeveloper {
-    font-size: 3.6vw;
+    font-size: 1em;
     font-family: cool;
     margin-bottom: 13px;
     text-align: center;
@@ -552,5 +556,41 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .cardHolder {
+  flex-direction: column;
+  padding: 0px 40px 50px 40px;
+  }
+
+  .card-container {
+    margin-top: 30px;
+    border-right: none;
+  }
+
+  .card {
+    width: 20em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  .whyUsTitle{
+    padding: 40px 30px 30px 30px;
+    font-size: 3em;
+  }
+
+  .first {
+      margin-top: 15px;
+  }
+  .card-section-container{
+    background: #fff;
+  }
+  .card-description {
+    padding: 20px 20px 45px 20px;
+  }
+  .card .image {
+      padding-top: 10px;
+  }
+  .height-adjuster {
+      height: 150%;
   }
 }

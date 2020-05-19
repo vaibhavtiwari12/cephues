@@ -1,6 +1,6 @@
 <html data-ng-app=portfolio>
 <meta content="width=device-width,initial-scale=1,maximum-scale=1" name=viewport>
-<title>Vaibhav Tiwari</title>
+<title>Cephues Analytics</title>
 <link href=portico.css rel=stylesheet>
 <link href=fab.min.css rel=stylesheet>
 <link href=media-min-961.css rel=stylesheet>
@@ -8,7 +8,7 @@
 <link href=media-320.css rel=stylesheet>
 <link href=font-awesome-4.6.3/css/font-awesome.min.css rel=stylesheet>
 <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
-<link href=favicon.ico rel="shortcut icon" type=image/x-icon> <link href=favicon.ico rel=icon type=image/x-icon>
+<link href="only_logo.svg"  rel="shortcut icon" type=image/x-icon> <link href=only_logo.svg rel=icon type=image/x-icon>
     <script>
 !function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new
 Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https://www.google-analytics.com/analytics.js",s.parentNode.insertBefore(o,s)}(window,document,"script",0,"ga"),ga("create","UA-81644386-1","auto"),ga("send","pageview")
@@ -16,19 +16,11 @@ Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https:
 
 <body data-ng-controller=portfolioController>
     <div class=loader-container id=loader-div>
-        <div id=global>
-            <div class=mask id=middle-down>
-                <div class=plane></div>
-            </div>
-            <div class=mask id=middle-top>
-                <div class=plane></div>
-            </div>
-            <div class=mask id=top>
-                <div class=plane></div>
-            </div>
-            <div class=mask id=bottom>
-                <div class=plane></div>
-            </div>
+        <div class="loaderImg">
+            <img class="blink-image" src="./CEPHEUSFINAL.png" alt="Logo" />
+        </div>
+        <div>
+            Loading...
         </div>
     </div>
     <div class=body-pre></div>
@@ -46,7 +38,7 @@ Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https:
             </div>
             <div class=top-menu id=top-menu>
                 <div class ="logo-container">
-                    <img src="./only_logo.svg" alt="Logo" />
+                    <img src="./onlylogo.png" alt="Logo" />
                     <div class="cephuesLogo">CEPHUES</div>
                 </div>
                 <div class="menu-item-container">
@@ -85,7 +77,59 @@ Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https:
                 </div>
             </div>
         </div>
-        <midsection>
+        <div class="card-section-container">
+
+            <div>
+                <div class="whyUsTitle">
+                    Why Choose Us?
+                </div>
+            </div>
+            <div class="cardHolder">
+                <div class="card-container first">
+                      <div class="card">
+                          <div class=image>
+                              01
+                          </div>
+                          <div class="card-title">
+                              Honest and Dependable
+                          </div>
+                          <div class="card-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text.
+                          </div>
+                      </div>
+                </div>
+                <div class="card-container">
+                     <div class="card">
+                         <div class=image>
+                             02
+                         </div>
+                         <div class="card-title">
+                             We Are Always Improving
+                         </div>
+                         <div class="card-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text.
+                         </div>
+                     </div>
+                </div>
+                <div class="card-container last">
+                    <div class="card">
+                        <div class=image>
+                            03
+                        </div>
+                        <div class="card-title">
+                            We Are Passionate
+                        </div>
+                        <div class="card-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!--  <midsection>
             <div class="mid-main mid-main-left">
                 <div class="add_on experience-heading">EXPERIENCE</div>
                 <div class="mid-main-container experience-margin">
@@ -282,8 +326,8 @@ Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https:
                     </div>
                 </div>
             </div>
-        </midsection>
-        <education>
+        </midsection> -->
+        <!-- <education>
             <div class="mid-main mid-main-left">
                 <div class="add_on experience-heading">ACADEMICS</div>
                 <div class=mid-main-container>
@@ -432,7 +476,7 @@ Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https:
                     </div>
                 </div>
             </div>
-        </contact>
+        </contact> -->
         <div class=footer>
             <div class="copyrights made"><i class="fa fa-copyright" aria-hidden=true></i> Designed and Developed By :
                 Vaibhav Tiwari</div>

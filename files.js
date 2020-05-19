@@ -150,12 +150,16 @@ jQuery(function($) {
   /*******SCROLL TO TOP -- START ********/
   $(document).ready(function() {
 	$(this).scrollTop(0);
-	$(".title_logo").hide();
+  $(".title_logo").hide();
+  if ($(window).height() < 425) {
+    $(".header").addClass("height-adjuster");
+  }
     if (jQuery(window).width() < 960) {
       $(".fab-cont").slideDown("fast");
       $(".logo-container").hide();
-	  $(".head-main").hide();
-	  $(".title_logo").show();
+      $(".head-main").hide();
+      $(".title_logo").show();
+      $(".top-menu").addClass('animation');
     }
     $(window).scroll(function() {
       if ($(this).scrollTop() > 150) {
@@ -216,7 +220,11 @@ $(window).resize(function() {
 	$(".title_logo").show();
 	$(".head-main").hide();
 	$(".logo-container").hide();
-    bg.height(jQuery(window).height() + 60);
+  }
+  if ($(window).height() < 425) {
+    $(".header").addClass("height-adjuster");
+  } else {
+    $(".header").removeClass("height-adjuster");
   }
   if ($(window).width() > 960) {
 	$(".logo-container").show();
