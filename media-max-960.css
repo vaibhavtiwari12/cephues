@@ -568,6 +568,7 @@
   }
 
   .cardHolder {
+  min-height: 800px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -578,6 +579,7 @@
   .card-container {
     margin-top: 30px;
     border-right: none;
+    min-height: 337px;
   }
 
   .card {
@@ -589,6 +591,7 @@
   .whyUsTitle{
     padding: 40px 30px 30px 30px;
     font-size: 3em;
+    height : auto;
   }
 
   .first {

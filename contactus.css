@@ -89,6 +89,16 @@
 }
 
 @media screen and (max-width: 960px) {
+    .contact-card-container{
+       justify-content: flex-start;
+       min-height: 230px;
+    }
+    .address-container {
+        min-height: 43px;
+    }
+    .circle_div_container {
+        min-height: 33px;
+    }
     .card-section-container  {
         background: none;
         margin-bottom: 15%;
@@ -105,7 +115,7 @@
     }
     .cardHolder {
         padding: 0px 40px 0px 20px;
-        
+        min-height: 200px;
     }
     .contact-email {
         margin-top: 24px;
