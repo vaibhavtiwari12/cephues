@@ -65,7 +65,7 @@
     color:#222;;
 }
 .country-title{
-    font-size: 1.0em;    
+    font-size: 0.9em;    
 }
 .address-sep{
     margin-top: 20px;
@@ -75,6 +75,7 @@
         -ms-flex:0;
             flex:0;
     color: #1a313e;
+    font-size:0.9em;
 }
 .address-title{
     font-size: 1.3em;
