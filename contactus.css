@@ -23,9 +23,9 @@
     color: rgba(101, 9, 21, 0.7215686274509804);
 }
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
 }
 .contact-card-container {
     -webkit-box-orient: vertical;
@@ -75,7 +75,7 @@
         -ms-flex:0;
             flex:0;
     color: #1a313e;
-    font-size:0.9em;
+    font-size:1em;
 }
 .address-title{
     font-size: 1.3em;
@@ -93,7 +93,7 @@
 @media screen and (max-width: 960px) {
     .contact-card-container{
        justify-content: flex-start;
-       min-height: 230px;
+       min-height: 1px;
     }
     .address-container {
         min-height: 43px;
@@ -103,7 +103,7 @@
     }
     .card-section-container  {
         background: none;
-        margin-bottom: 15%;
+        min-height: 100%;
     }
     .contact-mid {
         margin-left: 0;
