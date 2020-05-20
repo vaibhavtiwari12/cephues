@@ -20,7 +20,7 @@
     font-family: cool;
     font-size: 3em;
     padding: 15px 40px 15px 40px;
-    color: #650915b8;
+    color: rgba(101, 9, 21, 0.7215686274509804);
 }
 .footer {
     position: fixed;
