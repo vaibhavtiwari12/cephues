@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: greatVibes;
   src: url(GreatVibes-Regular.otf);
@@ -29,7 +36,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -92,6 +100,7 @@ html {
 
 .head-main {
   -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
   transition: all 300ms;
 }
 
@@ -132,6 +141,8 @@ html {
 
 .top-menu.show {
     z-index: 955;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     background: #fff;
     padding-right: 25px;
@@ -139,9 +150,16 @@ html {
     border-bottom: 1px solid #a9a9a9;
  }
 .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 30px;
   font-size: 1.7vw;
   font-weight: 500;
@@ -172,6 +190,7 @@ html {
 .top-menu-sub {
   margin-left: 25px;
   -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
   transition: all 300ms;
   border-bottom: 1px solid transparent;
   position: relative;
@@ -181,6 +200,7 @@ html {
 .about {
   margin-left: 30px;
   -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
   transition: all 300ms;
   border-bottom: 1px solid transparent;
   position: relative;
@@ -191,7 +211,10 @@ midsection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 education {
@@ -488,7 +511,8 @@ education {
   height: 72px;
   width: 31px;
   -webkit-transform: rotate(24deg);
-  transform: rotate(24deg);
+  -ms-transform: rotate(24deg);
+      transform: rotate(24deg);
 }
 
 .thats_me_container {
@@ -545,6 +569,7 @@ education {
   background-color: rgba(43, 42, 42, 0);
   color: #fff;
   -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
@@ -641,6 +666,7 @@ education {
   border-bottom: 1px solid #333;
   z-index: 5;
   -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
   cursor: pointer;
 }
@@ -757,6 +783,7 @@ a {
   right: 60px;
   bottom: 30px;
   -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
   transition: all 300ms;
 }
 
@@ -771,11 +798,21 @@ a {
   background-color: white;
   z-index: 9997;
   -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .loader-container .loaderImg img{
@@ -799,7 +836,8 @@ a {
   margin-top: -70.5px;
   margin-left: -35px;
   -webkit-transform: rotate(79deg);
-  transform: rotate(79deg);
+  -ms-transform: rotate(79deg);
+      transform: rotate(79deg);
 }
 
 #global .mask {
@@ -834,7 +872,8 @@ a {
   height: 19px;
   left: -1px;
   -webkit-transform: skew(25deg, 10deg);
-  transform: skew(25deg, 10deg);
+  -ms-transform: skew(25deg, 10deg);
+      transform: skew(25deg, 10deg);
   z-index: 100;
   top: 90px;
 }
@@ -851,7 +890,8 @@ a {
   top: 12px;
   left: 11px;
   -webkit-transform: skew(-11deg, 47deg);
-  transform: skew(-11deg, 47deg);
+  -ms-transform: skew(-11deg, 47deg);
+      transform: skew(-11deg, 47deg);
 }
 
 #global #middle-top .plane {
@@ -869,7 +909,8 @@ a {
   top: 43px;
   left: 0px;
   -webkit-transform: skew(-10deg, -22deg);
-  transform: skew(-10deg, -22deg);
+  -ms-transform: skew(-10deg, -22deg);
+      transform: skew(-10deg, -22deg);
 }
 
 #global #middle-down .plane {
@@ -887,7 +928,8 @@ a {
   top: 86.5px;
   left: -7.4px;
   -webkit-transform: skew(-155deg, -80deg);
-  transform: skew(-155deg, -80deg);
+  -ms-transform: skew(-155deg, -80deg);
+      transform: skew(-155deg, -80deg);
 }
 
 #global #bottom .plane {
@@ -1032,21 +1074,11 @@ a {
 
 .error {
   border: 1px solid #ff0000 !important;
-  box-shadow: 0px 0px 1px 0px #a20302 !important;
+  -webkit-box-shadow: 0px 0px 1px 0px #a20302 !important;
+          box-shadow: 0px 0px 1px 0px #a20302 !important;
 }
 
-/* Firefox old*/
-@-moz-keyframes blink {
-    0% {
-        opacity:1;
-    }
-    50% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-} 
+/* Firefox old*/ 
 
 @-webkit-keyframes blink {
     0% {
@@ -1059,18 +1091,7 @@ a {
         opacity:1;
     }
 }
-/* IE */
-@-ms-keyframes blink {
-    0% {
-        opacity:1;
-    }
-    50% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-} 
+/* IE */ 
 /* Opera and prob css3 final iteration */
 @keyframes blink {
     0% {
@@ -1083,25 +1104,35 @@ a {
         opacity:1;
     }
 } 
-.blink-image {
-    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
-    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
-    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+.blink-image { /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */ /* IE */
     animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
 }
 
 .cardHolder {
   font-family: cool;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 40px 40px 50px 40px;
-  border-right: 1px solid #222
 }
 .card-container {
-  flex:1;
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-right: 1px solid #c7c7c7;
 }
 .last {
@@ -1109,12 +1140,16 @@ a {
 }
 .card{
   width: 85%;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  -o-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   /* border: 1px solid #eee; */
 }
 .card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .card .image{
   font-weight: 400;

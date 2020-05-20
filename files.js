@@ -101,7 +101,7 @@ jQuery(function($) {
 
   /**********************  Smooth Scroll Starts  ***********************/
 
-  var $window = $(window); //Window object
+  /* var $window = $(window); //Window object
 
   var scrollTime = 0.6; //Scroll time
   var scrollDistance = 220; //Distance. Use smaller value for shorter scroll and greater value for longer scroll
@@ -120,9 +120,9 @@ jQuery(function($) {
       autoKill: true,
       overwrite: 5
     });
-  });
+  }); */
   /**********************  Smooth Scroll Ends  ***********************/
-  var counter = 0;
+ /*  var counter = 0;
   var maxSize = $(".progress-bar-sub").length;
   $(".progress-bar-sub").each(function() {
     var element = $(this);
@@ -146,7 +146,7 @@ jQuery(function($) {
     };
 
     $(".progress-bar-text").bind("inview", startProgressBar);
-  });
+  }); */
   /*******SCROLL TO TOP -- START ********/
   $(document).ready(function() {
 	$(this).scrollTop(0);

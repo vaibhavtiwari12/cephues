@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media screen and (min-width: 961px) {
   about {
     display: -webkit-box;
@@ -71,12 +78,20 @@
     margin-left: 10px;
   }
   .menu-item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     width: 100%;
     margin-right: 50px;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 
   .head-main {
@@ -295,6 +310,7 @@
     position: absolute;
     left: 5px;
     -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
     transition: all 400ms;
   }
 
@@ -310,6 +326,7 @@
     position: absolute;
     left: 4px;
     -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
     transition: all 400ms;
   }
 
