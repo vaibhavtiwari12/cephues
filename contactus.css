@@ -83,6 +83,10 @@
 
 }
 
+.card-section-container {
+    min-height: 100%;
+}
+
 .body-main {
  background: url(map.jpg) no-repeat center center scroll;
   background-size: cover;
