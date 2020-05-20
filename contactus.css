@@ -59,7 +59,8 @@
 }
 .address-container{
     padding-left: 53px;
-    font-size: 1.0em;
+    font-size: 0.9em;
+    font-style: italic;
     padding-top: 5px;
     color:#222;;
 }
